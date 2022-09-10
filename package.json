@@ -1,0 +1,20 @@
+{
+  "name": "cinemaapi",
+  "version": "1.0.0",
+  "description": "Esta es la API del Cinema",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Jonathan Estrada",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mssql": "^9.0.1"
+  }
+}
