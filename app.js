@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors');
 const config = require('./configuration/config')
 const peliculasRoute = require('./routes/pelicula.route')
 const tokenRoute = require('./routes/token.route')
@@ -7,6 +8,7 @@ const app = express()
 
 //Middlewares
 app.use(express.json()) // Se utiliza para poder interpretar JSON
+app.use(cors())
 
 app.use('/api/token', tokenRoute)
 app.use('/api/peliculas', jwtMiddleware , peliculasRoute)
