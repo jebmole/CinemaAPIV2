@@ -24,7 +24,7 @@ validarUsuario = async (req, res) => {
 
     res.send({ token });
   } else {
-    res.status(403).send({ error: "Credenciales invalidas" });
+    res.status(403).send({ error: "Credenciales inválidas" });
   }
 };
 
