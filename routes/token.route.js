@@ -1,22 +1,8 @@
 const { Router } = require("express");
-const { generateToken } = require("../helpers/handler.jwt");
+const { validarUsuario } = require("../controllers/login.controller");
 
 const routes = Router();
 
-routes.post("/", (req, res)=> {
-    const login = req.body;
-    if(login.usuario === "admin" && login.password === "abc123"){
-        const token = generateToken({
-            id: 1,
-            name: "Administrador"
-        });
-
-        res.send({ token });
-    }
-    else{
-        res.status(403).send({ error: "Credenciales invalidas"});
-    }
-
-});
+routes.post("/", validarUsuario);
 
 module.exports = routes;
