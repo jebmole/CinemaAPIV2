@@ -8,7 +8,7 @@ const sqlConfig = {
     server: config.DB_SERVER,
     options: {
       trustServerCertificate: true, // Debe ser true para ambiente local
-      instanceName: 'SQLEXPRESS', // Solo necesario si la instancia tiene nombre, debe estar corriendo SQL Browser
+      //instanceName: 'SQLEXPRESS', // Solo necesario si la instancia tiene nombre, debe estar corriendo SQL Browser
     },
   };
 

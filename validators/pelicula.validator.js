@@ -6,7 +6,7 @@ const insertarPeliculaValidator = [
             .withMessage("Debe especificar el campo: nombre")
         .notEmpty()
             .withMessage("El campo nombre es requerido")
-        .isLength({ min: 3, max: 10})
+        .isLength({ min: 3, max: 30})
             .withMessage("El nombre debe tener una longitud entre 3 y 10 caracteres"),
 
     check("sipnosis")
